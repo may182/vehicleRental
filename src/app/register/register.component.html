@@ -1,0 +1,45 @@
+<h1>Welcome to registration Page</h1>
+
+<div class="col-md-8 offset-3">
+
+<form action="" (ngSubmit)="onSubmit()">
+    <table>
+        <tr>
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" id="firstName" [(ngModel)]="customer.firstName" name="firstName">
+    </div>
+</tr>
+    <tr>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" id="lastName" [(ngModel)]="customer.lastName" name="lastName">
+    </div>  
+</tr>
+<tr>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" [(ngModel)]="customer.emailId" name="email">
+    </div>  
+</tr>
+<tr>
+    <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="text" id="mobileNumber" [(ngModel)]="customer.mobileNumber" name="mobileNumber">
+    </div>  
+</tr>
+<tr>
+    <div class="form-group">
+        <td>
+        <label>Address</label>
+    </td>
+        <td>
+        <input type="textarea" id="Address" [(ngModel)]="customer.address" name="address">
+    </td>
+    </div>
+</tr>
+</table>
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
+
+</div>
